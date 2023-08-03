@@ -1,0 +1,99 @@
+.slider {
+    display: flex;
+    flex-wrap: wrap;
+    height: 30vh;
+    width: 100vw;
+}
+
+img {
+    /* position: absolute; */
+    width: 30vw;
+    height: 30vh;
+    /* margin-right: -20vh; */
+    animation: marginer 5s forwards infinite;
+}
+
+@keyframes marginer {
+    from {margin-right: -22vh;}
+    to {margin-right: 1vh;}
+}
+
+.img1:hover {
+    filter: grayscale(80%);
+}
+
+.img2:hover {
+    filter:blur(5px)
+}
+
+.img3:hover {
+    filter:brightness(70%)
+}
+
+.img4:hover {
+    filter:hue-rotate(20deg)
+}
+
+.img5:hover {
+    filter: sepia(50%);
+}
+
+/* 
+.img1 {
+    z-index: 5;
+}
+
+.img2 {
+    animation: slide1 3s 1s forwards linear;
+    z-index: 4;
+}
+
+.img3 {
+    animation: slide2 3s 3s forwards linear;
+    z-index: 3;
+
+}
+
+.img4 {
+    animation: slide3 3s 5s forwards linear;
+    z-index: 2;
+}
+
+.img5 {
+    animation: slide4 3s 7s forwards linear;
+    z-index: 1;
+} */
+
+/* 
+@keyframes slide1 {
+    from {left: 8px;}
+    to {left: 25vh;}
+}
+
+@keyframes slide2 {
+    from {left: 8px;}
+    to {left: 50vh;}
+}
+
+@keyframes slide3 {
+    from {left: 8px;}
+    to {left: 75vh;}
+}
+
+@keyframes slide4 {
+    from {left: 8px;}
+    to {left: 100vh;}
+} */
+
+/* @keyframes cardSlide {
+    from {width: 20vw}
+    to {width:100vw}
+} */
+
+@media screen and (max-width: 600px) {
+
+   .slider {
+    width: 100vw;
+    animation: cardSlide 2s forwards linear;
+   } 
+}
